@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+<input type="button" id="showSelected" value="Insert Link">
+
+<textarea class="form-control" onchange="updateIframe()" rows="15" cols="35" id="editor" name="details">
+
+  
+</textarea>
+<div id="result"></div>
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script>
+    var myFrame = document.getElementById("result")
+function updateIframe() {
+  var textareaValue = document.getElementById("editor").value;
+
+  myFrame.innerHTML = textareaValue;
+
+}
+    function getInputSelection(elem){
+    if(typeof elem != "undefined"){
+      s=elem[0].selectionStart;
+      e=elem[0].selectionEnd;
+      return elem.val().substring(s, e);
+    }else{
+      return '';
+    }
+  }
+  $(function () {
+    $('#showSelected').on('click', function(){
+      var text = getInputSelection($("#editor"));
+   
+        var str = document.getElementById("editor").value;
+        var res = str.replace(text, "<b >"+text+"</b>");
+        
+        //THIS LINE
+        document.getElementById("editor").value = res;
+     // }
+  
+    });
+  
+  });
+  </script>
+</body>
+</html>
