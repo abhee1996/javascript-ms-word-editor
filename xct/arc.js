@@ -43,6 +43,47 @@ function getSelectionText() {
 
 
 
+  // focusData.addEventListener('keydown',function(){
+//   if (e.keyCode === 13) {
+//     // insert 2 br tags (if only one br tag is inserted the cursor won't go to the next line)
+//     document.execCommand('insertHTML', false, '<br/>');
+//     // prevent the default behaviour of return key pressed
+//     return true;
+// }
+// var bodyText = document.querySelector('#result');
+// var divNode = document.createElement('div');
+// var newRandomIdDIv = "tablediv" + Math.random(); 
+// divNode.setAttribute(`Id`,`${newRandomIdDIv}`)
+// var firstLine = bodyText.firstChild;
+// divNode.appendChild(firstLine);
+// bodyText.prepend(divNode);
+//})
+// var bodyText = document.querySelector('#result');
+// var firstLine = bodyText.firstChild;
+// var LastLine = bodyText.lastChild;
+// var sublingwords = bodyText.nextSibling
+
+// console.log(`firstLine`, firstLine)
+// console.log(`LastLine`, LastLine)
+// console.log(`sublingwords`, sublingwords)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

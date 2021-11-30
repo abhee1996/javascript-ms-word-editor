@@ -18,6 +18,16 @@ textarea{
   padding: 2px;
   resize: both;
   width: 600px;
+  caret-color:#000  !important;
+  padding: 15px !important;
+
+  /* white-space: pre-wrap !important; */
+
+
+}
+#bold{
+  font-size: larger;
+  font-weight: bolder;
 }
 .app {
     display: flex;
@@ -45,6 +55,9 @@ tr,.ctr{
 }
 td, .ctd{
     border: 2px solid black;
+}
+.toolbar{
+
 }
 .cls-context-link {
     display: block;
@@ -87,7 +100,7 @@ td, .ctd{
   /* toolbar */
   .toolbar{
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
   .toolbar a{
     margin:1px 3px ;
@@ -95,6 +108,11 @@ td, .ctd{
     text-decoration: none;
     color: #000 !important;
     border: 1px solid #000;
+  }
+  .toolbarBtn{
+    display: flex;
+    
+
   }
   .toolbar a .table{
 
@@ -105,10 +123,16 @@ td, .ctd{
   .toolbar a #bold{
 
   }
-  .subscript{
+  .subscript {
+    bottom: -1.5em !important;
+}
+.supscript {
+  top: 0.5em !important;
+}
+  /* .subscript{
     vertical-align: sub;
     font-size: small;
-  }
+  } */
   #table-context-menu{
     padding:10px;
     text-decoration:none;
@@ -126,4 +150,17 @@ td, .ctd{
   #table-context-menu .col-md-6 li{
     /* padding:10px; */
     text-decoration:none;
+  }
+  #sourcecodediv{
+ 
+    /* margin-top: 50px; */
+    max-width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    overflow:auto;
+  }
+  #sourcecodedivbtn{
+    /* display: flex;
+    justify-content:center; */
+    margin-top: 50px;
   }

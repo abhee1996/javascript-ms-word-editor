@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+    margin: 1em;
+}
+div p {
+    outline: 1px dotted #dcdcdc;
+    margin: 1em 0;
+}
+div p:before {
+    content: "<p>";
+    color: silver;
+}
+div p:after {
+    content: "</p>";
+    color: silver;
+}
+
+    </style>
+</head>
+<body>
+    <div contenteditable="true"  id="demo">
+        <p>Some more text which is fine</p>
+        
+        
+        
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-1.8@1.8.3/jquery.js"></script> -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

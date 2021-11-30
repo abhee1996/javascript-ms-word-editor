@@ -90,3 +90,51 @@
 //   myFrame.innerHTML = clkTableStr
 //   focusData.value = clkTableStr
 // }
+
+
+
+
+
+// function clickBold() {
+//   //alert('bold')
+//   //var clickBoldStr = focusData.textContent;
+//   //var sel = getSelection();
+//  if (window.getSelection().focusNode.parentElement.closest("#result").id != "result") return;
+
+//   var sel = document.getSelection() //&& document.getSelection();
+
+//   let selectedParent = sel.commonAncestorContainer.parentElement;
+//   let mainParent = selectedParent.textContent;
+//   //if (sel && sel.rangeCount == 0 && savedRange != null) {
+//   //  sel.addRange(savedRange);
+//   //}
+//   //if (sel && sel.rangeCount > 0) {
+
+//     //var rng = sel.getRangeAt(0)
+//    // var start = rng.anchorOffset;//rng.startOffset;
+//    // var end = rng.focusOffset;//rng.endOffset;
+
+//     const boldtag = document.createElement("b");
+//     boldtag.appendChild(sel.extractContents());
+//     sel.insertNode(boldtag);
+//     mainParent.normalize();
+
+//     //var markedText = focusData.textContent.slice(start, end)
+//     //console.log(`markedText`, markedText)
+//     //var res = clickBoldStr.slice(0, start) + "<b>" + markedText + "</b>" + clickBoldStr.slice(end)
+//     //clickBoldStr = res
+//    // myFrame.innerHTML = clickBoldStr
+
+//     //focusData.value = clickBoldStr
+//   //}
+// }
+// function clickParagraph() {
+//   var start = focusData.selectionStart
+//   var end = focusData.selectionEnd
+//   var markedText = focusData.value.slice(start, end)
+//   var paraListStr = focusData.value;
+//   res = paraListStr.slice(0, start) + `<p> ${markedText}</p> ` + paraListStr.slice(end)
+//   paraListStr = res
+//   myFrame.innerHTML = paraListStr
+//   focusData.value = paraListStr
+// }
